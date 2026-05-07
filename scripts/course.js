@@ -18,15 +18,63 @@ menuButton.addEventListener("click", () => {
 
 
 
+// COURSES ARRAY
+const courses = [
+    {
+        subject: 'CSE',
+        number: 110,
+        title: 'Introduction to Programming',
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 130,
+        title: 'Web Fundamentals',
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 111,
+        title: 'Programming with Functions',
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 210,
+        title: 'Programming with Classes',
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 131,
+        title: 'Dynamic Web Fundamentals',
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 231,
+        title: 'Frontend Web Development I',
+        credits: 2,
+        completed: false
+    }
+];
 
-// Function to display courses
+
+// DISPLAY COURSES
 function displayCourses(courseList) {
     courseContainer.innerHTML = "";
 
     courseList.forEach(course => {
         const courseCard = document.createElement("p");
-        courseCard.textContent = `${course.subject} ${course.number}`;
 
+        // show subject + number + title
+        courseCard.textContent = `${course.subject} ${course.number}`;
+        // mark completed
         if (course.completed) {
             courseCard.classList.add("completed");
         }
@@ -34,13 +82,16 @@ function displayCourses(courseList) {
         courseContainer.appendChild(courseCard);
     });
 
-    const credits = courseList.reduce((sum, course) => sum + course.credits, 0);
-    totalCredits.textContent = credits;
+    // total credits
+   const credits = courseList
+  .filter(course => course.completed)
+  .reduce((sum, course) => sum + course.credits, 0);
+
+totalCredits.textContent = credits;
 }
 
 
-
-// Filter buttons
+// FILTER BUTTONS
 document.querySelector("#all").addEventListener("click", () => {
     displayCourses(courses);
 });
@@ -54,3 +105,9 @@ document.querySelector("#wdd").addEventListener("click", () => {
     const wddCourses = courses.filter(course => course.subject === "WDD");
     displayCourses(wddCourses);
 });
+
+
+// =====================
+// INITIAL LOAD (IMPORTANT)
+// =====================
+displayCourses(courses);

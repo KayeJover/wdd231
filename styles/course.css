@@ -9,11 +9,12 @@ header { background: #1d3557;
          color: white; 
          padding-top:10px;
          
+         
 }
 .logo-title { display: flex; 
               align-items: center;
-               gap: 10px; 
-            font-size: 20px;
+               gap: 20px; 
+            font-size: 10px;
 }            
 
 .logo { width: 60px;
@@ -27,8 +28,8 @@ header { background: #1d3557;
         color: white;
          cursor: pointer; 
          display: block;
-          margin-top: .5rem;
-         }
+         margin-right:30px;
+}
 
 .navigation { display: none;
             flex-direction: column;
@@ -88,31 +89,57 @@ h1 { margin-bottom: 1rem;
                   gap: 10px; 
                   padding: 1rem;
                   grid-template-columns: repeat(3, 1fr);
-                  
-                  
-
-                  
 }
 
-.course-buttons button, .course-list p { padding: .8rem 1rem; 
+.course-buttons button { padding: .8rem 1rem; 
                                          border: none; 
                                          background: #ddd; 
                                          text-align: center; 
 }
 
-.course-list { display: grid; 
-               gap: 10px; 
-               padding: 1rem;
-               
+.card .credit-text {
+  color: #ffffff;
+  text-align: center;
+}      
+#course-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 15px;
 }
-.course-list p{
-    color:black;
-}
-.credit-text { text-align: center; 
-               padding-bottom: 1rem; }
 
+#course-container p {
+  background: black;
+  padding: 12px;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+.completed {
+  background: #cce5cc;
+  color: #1e4d1e;
+  font-weight: bold;
+}
+.completed::before {
+  content: "✔ ";
+  font-weight: bold;
+  color: green;
+}
+.course-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.course-buttons button {
+  flex: 1;
+  padding: 10px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
 footer { background: #1d3557; 
-         color: white; 
+         color: #ffffff; 
          text-align: center; 
          padding: 1rem; 
 }
@@ -156,4 +183,5 @@ header {
   width: 150px;
   display: none;
 }
+
 }
