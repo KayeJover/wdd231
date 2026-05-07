@@ -1,0 +1,159 @@
+body { font-family: 'Poppins', sans-serif; 
+       background: #f4f4f4; 
+       color: #222;
+        line-height: 1.6;
+        
+    }
+
+header { background: #1d3557; 
+         color: white; 
+         padding-top:10px;
+         
+}
+.logo-title { display: flex; 
+              align-items: center;
+               gap: 10px; 
+            font-size: 20px;
+}            
+
+.logo { width: 60px;
+        height:60px;
+        
+ }
+
+#menu { font-size: 2rem; 
+        background: none; 
+        border: none; 
+        color: white;
+         cursor: pointer; 
+         display: block;
+          margin-top: .5rem;
+         }
+
+.navigation { display: none;
+            flex-direction: column;
+            background-color:black;
+            width:100%;
+         }
+
+.navigation a { color: white;
+                text-decoration: none;
+                padding: .8rem; 
+                transition: background .3s; }
+
+.navigation a:hover, .navigation .active { background: #457b9d;
+ }
+
+.navigation.open { display: flex; 
+}
+
+main { max-width: 1100px; 
+       margin: auto; 
+       padding: 1rem; 
+}
+
+h1 { margin-bottom: 1rem; 
+    
+}
+
+.card { background: #53739f; 
+        margin-bottom: 1rem; 
+        border-radius: 8px; 
+        overflow: hidden; 
+        box-shadow: 0 2px 8px rgba(0,0,0,.1); 
+}
+
+.card h2 { background: #1d3557; 
+           color: white; 
+           padding: .7rem; 
+           text-align: center; 
+           font-size: 20px;
+           
+}
+
+.card p, .card img { padding: 1rem; 
+            border-radius: 30px;
+            color:white;
+
+
+}
+
+.photo img { width: 100%; 
+             max-width: 250px; 
+             display: block; 
+             margin: auto; 
+}
+
+.course-buttons { display: grid; 
+                  gap: 10px; 
+                  padding: 1rem;
+                  grid-template-columns: repeat(3, 1fr);
+                  
+                  
+
+                  
+}
+
+.course-buttons button, .course-list p { padding: .8rem 1rem; 
+                                         border: none; 
+                                         background: #ddd; 
+                                         text-align: center; 
+}
+
+.course-list { display: grid; 
+               gap: 10px; 
+               padding: 1rem;
+               
+}
+.course-list p{
+    color:black;
+}
+.credit-text { text-align: center; 
+               padding-bottom: 1rem; }
+
+footer { background: #1d3557; 
+         color: white; 
+         text-align: center; 
+         padding: 1rem; 
+}
+
+.socials a { color: white; 
+             margin: 0 10px; 
+             text-decoration: none; 
+             
+}
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+   
+}
+.socials img{
+    width:22px;
+    height:22px;
+}
+
+
+@media (max-width: 768px) {
+header {
+    display: flex;
+    align-items: center;
+  }
+
+#menu{
+    font-size: 22px;
+    background: none;
+    border: none;
+     margin-left: 20px;
+  }
+.navigation {
+  position: absolute;
+  top: 60px;   /* adjust based on header height */
+  right: 10px; /* aligns under the button */
+  background: black;
+  width: 150px;
+  display: none;
+}
+}
