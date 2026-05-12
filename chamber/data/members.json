@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Acme Corporation",
+        "address": "18895 E. Arenth Avenue, City of Industry, CA 91748",
+        "phone": "(626) 964-3456",
+        "website": "https://www.acmecorp.com",
+        "image": "acme-logo.png",
+        "membershipLevel": 1,
+        "info": "Leading provider of innovative solutions."
+    },
+    {
+        "name": "Delta Marketing Co.",
+        "address": "456 Maple St, Timbuktu",
+        "phone":" (555)123-4567",
+        "website": "https://www.deltamarketingco.com",
+        "image": "delta-marketing-logo.png",
+        "membershipLevel": 1,
+        "info": "Innovative marketing solutions for modern businesses."
+    },
+    {
+        "name": "Alpha Consulting",
+        "address": "620 Cranbury Road, Suite 212 P.O. Box 6969 East Brunswick",
+        "phone": "(732) 257-3003",
+        "website": "https://www.alphaconsulting.com",
+        "image": "alpha-consulting-logo.png",
+        "membershipLevel": 3,
+        "info": "Expert consultants in business strategy and development."
+    },
+    {
+        "name": "Nike Inc.",
+        "address": "Robinson Place Manila, Pedro Gil St,Ermita, Manila",
+        "phone": "(63) 9285-217719",
+        "website": "https://www.nike.com/ph/?cp=63845398194_search_|ph|Core+Brand+-+Core+Brand+-+General+-+EN_EN|GOOGLE|nike|11642601&gclsrc=aw.ds&ds_rl=1300698&ds_rl=1296529&gad_source=1&gad_campaignid=6466393340&gbraid=0AAAAACrzPFFViYHvmjL3Q4LUrXV6CRMdh&gclid=CjwKCAjwn4vQBhBsEiwAq3hhN4uzjF3pAkRI4y1duDlsZtjGtJlLRU1BkSo9GG67bECeaX3QbdjBJBoCkcMQAvD_BwE",
+        "image": "nike.png",
+        "membershipLevel": 1,
+        "info": "Classic silhouettes and cutting-edge innovation to build your game from the ground up."
+    },
+    {
+        "name": "Epsilon Enterprises",
+        "address": "21 Harris Street, Pyrmont NSW 2009, Australia",
+        "phone":"(567) 890-1234",
+        "website": "https://www.epsilon.com",
+        "image": "epsilon-logo.png",
+        "membershipLevel": 2,
+        "info": "Your trusted partner in business."
+    },
+    {
+        "name": "Jollibee Foods Corporation",
+        "address": "Jollibee Plaza, 10 Tindalo St, Barangay San Antonio, Pasig City, Metro Manila, Philippines",
+        "phone": "+63 2 8700 8000",
+        "website": "https://www.jollibee.com.ph",
+        "image": "jollibee-logo.png",
+        "membershipLevel": 3,
+        "info": "The largest fast-food chain in the Philippines, known for its Chickenjoy."
+    },
+    {
+        "name": "Globe Telecom",
+        "address": "McKinley, Bonifacio Global City, Taguig, Metro Manila, Philippines",
+        "phone": "+63 2 730 1000",
+        "website": "https://www.globe.com.ph",
+        "image": "globe-telecom-logo.png",
+        "membershipLevel": 3,
+        "info": "A leading telecommunications company providing mobile and broadband services."
+    }
+]

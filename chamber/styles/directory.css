@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header,
+footer {
+    background-color: #003049;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.menu {
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+.logo img{
+    width:5%;
+    
+}
+.menu button {
+    padding: 0.7rem 1rem;
+
+    margin: 0.5rem;
+
+    border: none;
+
+    background-color: #003049;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#members.grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 1rem;
+}
+
+#members.grid section {
+    background-color: white;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#members.grid img {
+    width: 120px;
+
+    height: auto;
+
+    margin-bottom: 1rem;
+}
+
+#members.list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+#members.list section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    background-color: white;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+}
+
+#members.list img {
+    width: 80px;
+}
+
+a {
+    color: #003049;
+}
+
+@media screen and (max-width: 768px) {
+
+    #members.list section {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
