@@ -1,9 +1,6 @@
 const membersContainer = document.querySelector('#members');
-
 const gridButton = document.querySelector('#grid');
-
 const listButton = document.querySelector('#list');
-
 const url = 'data/members.json';
 
 async function getMembers() {
@@ -21,39 +18,23 @@ getMembers();
 const displayMembers = (members) => {
 
     members.forEach((member) => {
-
         let card = document.createElement('section');
-
         let name = document.createElement('h2');
-
         let address = document.createElement('p');
-
         let phone = document.createElement('p');
-
         let website = document.createElement('a');
-
         let info = document.createElement('p');
-
         let logo = document.createElement('img');
 
         name.textContent = member.name;
-
         address.textContent = member.address;
-
         phone.textContent = member.phone;
-
         info.textContent = member.info;
-
         website.textContent = 'Visit Website';
-
         website.setAttribute('href', member.website);
-
         website.setAttribute('target', '_blank');
-
         logo.setAttribute('src', `images/${member.image}`);
-
         logo.setAttribute('alt', `${member.name} Logo`);
-
         logo.setAttribute('loading', 'lazy');
 
         card.appendChild(logo);
@@ -77,7 +58,6 @@ const displayMembers = (members) => {
 gridButton.addEventListener('click', () => {
 
     membersContainer.classList.add('grid');
-
     membersContainer.classList.remove('list');
 
 });
