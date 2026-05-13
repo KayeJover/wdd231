@@ -52,6 +52,7 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
+
 .navigation a.active {
     color: #fcbf49;
      border-bottom: 3px solid #fcbf49;
@@ -153,22 +154,4 @@ footer{
 
 .footer-socials img:hover {
     transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-
-    .top-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo-title {
-        flex-direction: column;
-    }
-
-    .navigation {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
 }
