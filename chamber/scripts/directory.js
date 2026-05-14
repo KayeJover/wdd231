@@ -35,7 +35,10 @@ const displayMembers = (members) => {
         website.setAttribute('target', '_blank');
         logo.setAttribute('src', `images/${member.image}`);
         logo.setAttribute('alt', `${member.name} Logo`);
+        logo.setAttribute('width', '120');
+        logo.setAttribute('height', '80');
         logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('decoding', 'async');
 
         card.appendChild(logo);
 
@@ -65,7 +68,6 @@ gridButton.addEventListener('click', () => {
 listButton.addEventListener('click', () => {
 
     membersContainer.classList.add('list');
-
     membersContainer.classList.remove('grid');
 
 });

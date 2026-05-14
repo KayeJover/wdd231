@@ -16,16 +16,18 @@
     <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/small-directory.css">
-
-    <script src="scripts/directory.js" defer></script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
+    <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+>
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/small-directory.css">
+    
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +36,8 @@
 
     <div class="top-header">
         <div class="logo-title">
-            <img src="images/masskara.png" alt="Logo">
+           <img 
+    src="images/masskara (1).webp" alt="Logo" width="60" height="60">
             <h1>Bacolod Chamber of Commerce</h1>
 
         </div>
@@ -80,15 +83,15 @@
 
          <div class="footer-socials">
             <a href="#">
-                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/facebook.webp" alt="Facebook" width="45" height="45">
             </a>
 
             <a href="#">
-                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/instagram.webp" alt="Instagram" width="45" height="45">
             </a>
 
             <a href="#">
-                <img src="images/linkedin.png" alt="LinkedIn">
+                <img src="images/linkedin.webp" alt="LinkedIn" width="45" height="45">
             </a>
 
         </div>
@@ -97,10 +100,11 @@
             <p>WDD231 Class Project</p>
             <p>Your Name</p>
             <p>
-                &copy; <span id="currentyear"></span>
+               <span id="currentyear">2026</span>
                 Bacolod Chamber of Commerce
             </p>
-            <p id="lastModified"></p>
+           <p id="lastModified">Last Modification: Loading...
+</p>
         </div>
     </div>
 
