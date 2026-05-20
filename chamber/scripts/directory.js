@@ -83,7 +83,118 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('open');
 
 });
+
 const lastModified = document.querySelector('#lastModified');
 
 lastModified.textContent =
 `Last Modification: ${document.lastModified}`;
+
+
+/* WEATHER API */
+
+const weatherURL =
+'https://api.openweathermap.org/data/2.5/weather?lat=10.6765&lon=122.9509&units=metric&appid=c7a51fde2845c136c5a8bd87a14a5f68';
+
+async function getWeather() {
+
+    try {
+
+        const response = await fetch(weatherURL);
+
+        if (!response.ok) {
+            throw new Error('Weather data failed');
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+
+        const weatherContainer =
+            document.querySelector('#weather');
+
+        weatherContainer.innerHTML = `
+            <p><strong>${Math.round(data.main.temp)}°C</strong></p>
+
+            <p>${data.weather[0].description}</p>
+
+            <p>Humidity: ${data.main.humidity}%</p>
+        `;
+
+    } catch (error) {
+
+        console.error(error);
+
+        document.querySelector('#weather').innerHTML =
+        `<p>Weather unavailable.</p>`;
+    }
+
+}
+
+getWeather();
+
+
+/* SPOTLIGHTS */
+
+const membersURL = 'data/members.json';
+
+async function getSpotlights() {
+
+    const response = await fetch(membersURL);
+
+    const members = await response.json();
+
+    const filtered = members.filter(member =>
+        member.membershipLevel === 2 ||
+        member.membershipLevel === 3
+    );
+
+    const randomMembers =
+        filtered.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+    displaySpotlights(randomMembers);
+
+}
+
+getSpotlights();
+
+function displaySpotlights(members) {
+
+    const container = document.querySelector('#spotlights');
+
+    members.forEach(member => {
+
+        const card = document.createElement('section');
+
+        card.classList.add('spotlight-card');
+
+        card.innerHTML = `
+            <img
+                src="images/${member.image}"
+                alt="${member.name}"
+                width="120"
+                height="80"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <h3>${member.name}</h3>
+
+            <p>${member.phone}</p>
+
+            <p>${member.address}</p>
+
+            <a href="${member.website}" target="_blank">
+                Visit Website
+            </a>
+
+            <p>
+                Membership Level:
+                ${member.membershipLevel}
+            </p>
+        `;
+
+        container.appendChild(card);
+
+    });
+
+}
