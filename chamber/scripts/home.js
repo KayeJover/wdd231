@@ -29,7 +29,6 @@ async function getWeather() {
 
         const data = await response.json();
 
-        console.log(data);
 
         const weatherIcon =
             `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -124,8 +123,6 @@ async function getForecast() {
         const response = await fetch(forecastURL);
 
         const data = await response.json();
-
-        console.log(data);
 
         const forecastContainer =
             document.querySelector('#forecast');
