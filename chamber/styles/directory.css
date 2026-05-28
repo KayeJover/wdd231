@@ -55,11 +55,7 @@ header {
     font-weight: bold;
 }
 
-.navigation a.active {
-    color: #fcbf49;
-     border-bottom: 3px solid #fcbf49;
-     padding-bottom: 0.3rem;
-}
+
 .navigation a:hover {
     text-decoration: underline;
 }
@@ -182,7 +178,7 @@ footer{
     content: "✖";
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
     .join-page {
 
@@ -190,11 +186,16 @@ footer{
 
         grid-template-columns: 1fr 1fr;
 
-        gap: 3rem;
+        gap: 4rem;
 
         align-items: start;
+    }
 
-        padding: 2rem;
+    .membership-section {
+
+        position: sticky;
+
+        top: 2rem;
     }
 
 }
