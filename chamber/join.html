@@ -11,9 +11,9 @@
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Bacolod Chamber of Commerce Business Join">
-    <meta property="og:description" content="Explore the Bacolod Chamber of Commerce business directory featuring local companies, organizations, and trusted business partners in Bacolod City.">
-    <meta property="og:image" content="https://kayejover.github.io/wdd231/images/masskara(1).webp">
-    <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/join.html">
+    <meta property="og:description" content="Join the Bacolod Chamber of Commerce and connect with local businesses, organizations, and trusted partners in Bacolod City.">
+    <meta property="og:image" content="https://kayejover.github.io/wdd231/images/masskara.webp">
+    <meta property="og:url" content="https://kayejover.github.io/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
     <div class="top-header">
         <div class="logo-title">
            <img 
-    src="images/masskara(1).webp" alt="Logo" width="60" height="60">
+    src="images/masskara.webp" alt="Logo" width="60" height="60">
             <h1>Bacolod Chamber of Commerce</h1>
 
         </div>
@@ -72,45 +72,68 @@
         name="timestamp"
     >
 
-            <label>
-                First Name
-                <input type="text" name="firstName" required>
-            </label>
+          <label>
+    First Name
+    <input
+        type="text"
+        name="firstName"
+        autocomplete="given-name"
+        required
+    >
+</label>
 
-            <label>
-                Last Name
-                <input type="text" name="lastName" required>
-            </label>
+<label>
+    Last Name
+    <input
+        type="text"
+        name="lastName"
+        autocomplete="family-name"
+        required
+    >
+</label>
 
-            <label>
-                Organizational Title
-                <input type="text" name="title">
-            </label>
+<label>
+    Organizational Title
+    <input
+        type="text"
+        name="title"
+        autocomplete="organization-title"
+        pattern="[A-Za-z\s\-]{7,}"
+        title="Only letters, spaces, and hyphens allowed. Minimum 7 characters."
+    >
+</label>
 
-            <label>
-                Email
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="john89@gmail.com"
-                    required
-                >
-            </label>
+<label>
+    Email
+    <input
+        type="email"
+        name="email"
+        autocomplete="email"
+        placeholder="john89@gmail.com"
+        required
+    >
+</label>
 
-            <label>
-                Cell Phone
-                <input
-                    type="tel"
-                    name="phone"
-                    placeholder="987-555-1234"
-                    required
-                >
-            </label>
+<label>
+    Cell Phone
+    <input
+        type="tel"
+        name="phone"
+        autocomplete="tel"
+        placeholder="987-555-1234"
+        required
+    >
+</label>
 
-            <label>
-                Business Name
-                <input type="text" name="business" required>
-            </label>
+<label>
+    Business Name
+    <input
+        type="text"
+        name="business"
+        autocomplete="organization"
+        required
+    >
+</label>
 
             <label>
                 Membership Level
