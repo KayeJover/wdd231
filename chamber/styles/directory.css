@@ -180,7 +180,7 @@ footer{
 
 @media screen and (min-width: 900px) {
 
-    .join-page {
+    .join-container {
 
         display: grid;
 
@@ -193,9 +193,7 @@ footer{
 
     .membership-section {
 
-        position: sticky;
-
-        top: 2rem;
+        margin-top: 0;
     }
 
 }
