@@ -89,9 +89,10 @@
     }
 
     .navigation a.active {
-        background-color: #5c8db3;
-        color: white;
-    }
+    color: #ffd700;
+    border-bottom: 3px solid #ffd700;
+}
+
     #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
