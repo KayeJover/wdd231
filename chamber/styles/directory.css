@@ -197,3 +197,52 @@ footer{
     }
 
 }
+
+@media screen and (min-width: 1025px) {
+
+.discover-grid {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+}
+
+.discover-card {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "image desc"
+        "image address"
+        "button button";
+
+    
+    grid-template-columns: 250px 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+.discover-card h2 {
+    grid-area: title;
+}
+
+.discover-card figure {
+    grid-area: image;
+}
+
+.discover-card p {
+    grid-area: desc;
+}
+
+.discover-card address {
+    grid-area: address;
+}
+
+.discover-card button {
+    grid-area: button;
+}
+
+}

@@ -394,3 +394,40 @@ textarea {
 
     background: #005b8a;
 }
+
+/* DISCOVER*/
+
+.visitor-message {
+    background: #eef7ff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid #004080;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background: white;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
