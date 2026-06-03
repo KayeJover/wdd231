@@ -15,15 +15,17 @@ const navigation = document.querySelector(".navigation");
 menuButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     menuButton.classList.toggle("open");
+
+    console.log(navigation.className);
 });
 
 // ACTIVE NAVIGATION LINK
-const currentPage = window.location.pathname.split('/').pop();
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 document.querySelectorAll('.navigation a').forEach(link => {
-    const page = link.href.split('/').pop();
+    const linkPage = link.getAttribute('href').split('/').pop();
 
-    if (page === currentPage) {
+    if (linkPage === currentPage) {
         link.classList.add('active');
     }
 });

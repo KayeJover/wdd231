@@ -1,20 +1,31 @@
-const menuButton = document.querySelector('#menu');
+const lastModified =
+document.querySelector('#lastModified');
 
-const navigation = document.querySelector('.navigation');
+if (lastModified) {
+    lastModified.textContent =
+    `Last Modification: ${document.lastModified}`;
+}
 
-menuButton.addEventListener('click', () => {
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
 
-    navigation.classList.toggle('open');
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    menuButton.classList.toggle("open");
 
-    menuButton.classList.toggle('open');
-
+    console.log(navigation.className);
 });
 
-const lastModified = document.querySelector('#lastModified');
+// ACTIVE NAVIGATION LINK
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-lastModified.textContent =
-`Last Modification: ${document.lastModified}`;
+document.querySelectorAll(".navigation a").forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
 
+    if (linkPage === currentPage) {
+        link.classList.add("active");
+    }
+});
 
 /* WEATHER API */
 

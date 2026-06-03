@@ -72,16 +72,12 @@ listButton.addEventListener('click', () => {
 
 });
 
-const menuButton = document.querySelector('#menu');
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
 
-const navigation = document.querySelector('.navigation');
-
-menuButton.addEventListener('click', () => {
-
-    navigation.classList.toggle('open');
-
-    menuButton.classList.toggle('open');
-
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    menuButton.classList.toggle("open");
 });
 
 const lastModified = document.querySelector('#lastModified');
@@ -97,6 +93,10 @@ const weatherURL =
 
 async function getWeather() {
 
+    const weatherContainer = document.querySelector('#weather');
+
+    if (!weatherContainer) return;
+
     try {
 
         const response = await fetch(weatherURL);
@@ -107,16 +107,9 @@ async function getWeather() {
 
         const data = await response.json();
 
-        console.log(data);
-
-        const weatherContainer =
-            document.querySelector('#weather');
-
         weatherContainer.innerHTML = `
             <p><strong>${Math.round(data.main.temp)}°C</strong></p>
-
             <p>${data.weather[0].description}</p>
-
             <p>Humidity: ${data.main.humidity}%</p>
         `;
 
@@ -124,10 +117,9 @@ async function getWeather() {
 
         console.error(error);
 
-        document.querySelector('#weather').innerHTML =
+        weatherContainer.innerHTML =
         `<p>Weather unavailable.</p>`;
     }
-
 }
 
 getWeather();
@@ -138,6 +130,10 @@ getWeather();
 const membersURL = 'data/members.json';
 
 async function getSpotlights() {
+
+    const container = document.querySelector('#spotlights');
+
+    if (!container) return;
 
     const response = await fetch(membersURL);
 
@@ -160,6 +156,10 @@ getSpotlights();
 function displaySpotlights(members) {
 
     const container = document.querySelector('#spotlights');
+
+    if (!container) return;
+
+    container.innerHTML = '';
 
     members.forEach(member => {
 
@@ -199,11 +199,13 @@ function displaySpotlights(members) {
 
 }
 
-// ACTIVE NAVIGATION LINK
-const currentPage = window.location.pathname.split('/').pop();
+
+/* ACTIVE NAVIGATION LINK */
+
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 document.querySelectorAll('.navigation a').forEach(link => {
-    const linkPage = new URL(link.href).pathname.split('/').pop();
+    const linkPage = link.getAttribute('href').split('/').pop();
 
     if (linkPage === currentPage) {
         link.classList.add('active');

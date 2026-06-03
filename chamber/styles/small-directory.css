@@ -17,9 +17,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
-            overflow: visible;
 
     }
+    nav {
+    flex-shrink: 0;
+}
     
     .logo-title {
         display: flex;
@@ -33,17 +35,15 @@
     }
 
     .logo-title h1 {
-        font-size: 1.4rem;
-        line-height: 1.2;
-        margin: 0;
-        color: white;
-        min-width: 280px;
-        min-height: 60px;    }
+          font-size: 1.1rem;
+    line-height: 1.2;
+    margin: 0;
+    color: white; }
 
     /* HAMBURGER */
 
     #menu {
-        display: block;
+        display: block !important;
         background: none;
         border: none;
         color: white;
@@ -51,6 +51,8 @@
         cursor: pointer;
          width: 50px;
         height: 50px;
+        position: relative;
+    z-index: 1001;
     }
 
     #menu::before {
@@ -62,17 +64,16 @@
     }
 
     /* MOBILE DROPDOWN */
+    nav {
+    position: relative;
     
+}
     .navigation {
-        display: none;
-        flex-direction: column;
-         justify-content: flex-start !important;
-    align-items: stretch !important;
-    gap: 0 !important;
+        display: none !important;  
         position: absolute;
-        top: 100%;
-        right: 0;
-        width: 220px;
+        top: calc(100% + 5px);
+    right: 0;
+        width: 100%;
         background: white;
         list-style: none;
         padding: 0;
@@ -81,7 +82,8 @@
     }
 
        .navigation.open {
-        display: block !important;
+             display: block !important;
+
     }
 
     .navigation li {
@@ -93,7 +95,6 @@
         display: block;
         width: 100%;
         padding: 1rem;
-
         color: black;
         text-decoration: none;
         font-weight: bold;
