@@ -47,15 +47,7 @@
         position: relative;
     }
 
-    #menu {
-        display: block;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2rem;
-        cursor: pointer;
-        z-index: 1001;
-    }
+   
 
     #menu::before {
         content: "☰";
@@ -64,50 +56,47 @@
     #menu.open::before {
         content: "✖";
     }
-    nav {
+     nav {
         position: relative;
     }
+
     .navigation {
         display: none;
         position: absolute;
-        top: 60px;
-        right: 0;
-
-        width: 220px;
+        top: 100%;
+        left: 0;
+        width: 100%;
 
         background: white;
-      z-index: 1000;
 
+        flex-direction: column;
         padding: 0;
         margin: 0;
-        list-style: none;
 
-        box-shadow: 0 4px 10px rgba(0,0,0,.2);
+        z-index: 9999;
+    }
 
     .navigation.open {
-       display: flex ;
-    flex-direction: column;
+        display: flex;
     }
 
     .navigation li {
-        display: block;
         width: 100%;
+        list-style: none;
     }
 
     .navigation a {
         display: block;
         padding: 1rem;
-          width: 100%;
-        color: #003049;
-        background: white;
+        color: black;
         text-decoration: none;
-
         border-bottom: 1px solid #ddd;
     }
 
-    .navigation a.active {
-        background: #003049;
-        color: #ffd700;
+    #menu {
+        display: block;
+        position: relative;
+        z-index: 10000;
     }
 
     #members.grid {
@@ -137,7 +126,7 @@
     height: 45px;
     object-fit: contain;
 }
-    }
+    
      #members.list {
         display: flex;
         flex-direction: column;
@@ -310,143 +299,7 @@ textarea {
         transform: translateY(0);
     }
 }
-@media screen and (min-width: 900px) {
-
-    .join-page {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        gap: 4rem;
-
-        padding: 3rem;
-
-        align-items: start;
-    }
-
-    .membership-section {
-
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 2rem;
-    }
-
-    .membership-card {
-
-        background: #dff3e7;
-
-        border-radius: 20px;
-
-        padding: 2rem;
-
-        text-align: center;
-
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
 }
 
-.thankyou-page {
 
-    display: flex;
 
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 3rem 1rem;
-}
-
-.thankyou-card {
-
-    background: white;
-
-    max-width: 700px;
-
-    width: 100%;
-
-    padding: 3rem;
-
-    border-radius: 20px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.thankyou-card h2 {
-
-    color: #003b5c;
-
-    margin-bottom: 1rem;
-}
-
-.submitted-info {
-
-    margin-top: 2rem;
-
-    line-height: 2;
-}
-
-.back-home {
-
-    display: inline-block;
-
-    margin-top: 2rem;
-
-    background: #003b5c;
-
-    color: white;
-
-    padding: 1rem 2rem;
-
-    border-radius: 10px;
-
-    text-decoration: none;
-
-    font-weight: bold;
-}
-
-.back-home:hover {
-
-    background: #005b8a;
-}
-
-/* DISCOVER*/
-
-.visitor-message {
-    background: #eef7ff;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-left: 5px solid #004080;
-}
-
-.discover-grid {
-    display: grid;
-    gap: 1rem;
-
-    grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5"
-        "card6"
-        "card7"
-        "card8";
-}
-
-.discover-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    background: white;
-}
-
-.discover-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-}

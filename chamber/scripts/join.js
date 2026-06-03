@@ -1,13 +1,6 @@
 document.querySelector('#timestamp').value =
 new Date().toISOString();
 
-const lastModified =
-document.querySelector('#lastModified');
-
-if (lastModified) {
-    lastModified.textContent =
-    `Last Modification: ${document.lastModified}`;
-}
 
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
