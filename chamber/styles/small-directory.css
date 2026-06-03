@@ -8,7 +8,6 @@
     header {
         background-color: #1f3b57;
         border-radius: 10px;
-        overflow: visible;
         position: relative;
     }
 
@@ -17,6 +16,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+            position: relative;
+
 
     }
     nav {
@@ -42,17 +43,18 @@
 
     /* HAMBURGER */
 
+     nav {
+        position: relative;
+    }
+
     #menu {
-        display: block !important;
+        display: block;
         background: none;
         border: none;
         color: white;
         font-size: 2rem;
         cursor: pointer;
-         width: 50px;
-        height: 50px;
-        position: relative;
-    z-index: 1001;
+        z-index: 1001;
     }
 
     #menu::before {
@@ -62,28 +64,29 @@
     #menu.open::before {
         content: "✖";
     }
-
-    /* MOBILE DROPDOWN */
     nav {
-    position: relative;
-    
-}
+        position: relative;
+    }
     .navigation {
-        display: none !important;  
+        display: none;
         position: absolute;
-        top: calc(100% + 5px);
-    right: 0;
-        width: 100%;
+        top: 60px;
+        right: 0;
+
+        width: 220px;
+
         background: white;
-        list-style: none;
+      z-index: 1000;
+
         padding: 0;
         margin: 0;
-        z-index: 999;
-    }
+        list-style: none;
 
-       .navigation.open {
-             display: block !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,.2);
 
+    .navigation.open {
+       display: flex ;
+    flex-direction: column;
     }
 
     .navigation li {
@@ -93,19 +96,19 @@
 
     .navigation a {
         display: block;
-        width: 100%;
         padding: 1rem;
-        color: black;
+          width: 100%;
+        color: #003049;
+        background: white;
         text-decoration: none;
-        font-weight: bold;
-        text-align: left;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-        
-    }
-   .navigation a:hover {
-        background-color: #f4f4f4;
+
+        border-bottom: 1px solid #ddd;
     }
 
+    .navigation a.active {
+        background: #003049;
+        color: #ffd700;
+    }
 
     #members.grid {
     display: grid;
@@ -445,4 +448,5 @@ textarea {
     width: 100%;
     height: auto;
     display: block;
+}
 }
