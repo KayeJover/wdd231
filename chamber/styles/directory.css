@@ -40,24 +40,36 @@ header {
     letter-spacing: 2px;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
-
-.navigation {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    list-style: none;
-    margin-right:10px;
+nav {
+    position: relative;
 }
-
+.navigation {
+      display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: .75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+     list-style: none;
+  
+}
+.navigation li {
+    list-style: none;
+}
 .navigation a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-
 .navigation a:hover {
-    text-decoration: underline;
+    color: #ffd700;
+}
+
+.navigation a.active {
+    color: #ffd700;
 }
 main {
     padding: 1rem;

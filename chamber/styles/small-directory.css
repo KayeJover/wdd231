@@ -1,3 +1,8 @@
+.navigation a.active {
+    color: #ffd700;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
 
     header {
@@ -12,8 +17,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
-    }
+            overflow: visible;
 
+    }
+    
     .logo-title {
         display: flex;
         align-items: center;
@@ -55,43 +62,49 @@
     }
 
     /* MOBILE DROPDOWN */
-
+    
     .navigation {
         display: none;
         flex-direction: column;
+         justify-content: flex-start !important;
+    align-items: stretch !important;
+    gap: 0 !important;
         position: absolute;
         top: 100%;
-        right: 1rem;
+        right: 0;
         width: 220px;
-        background-color: white;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        background: white;
+        list-style: none;
+        padding: 0;
+        margin: 0;
         z-index: 999;
     }
 
-    .navigation.open {
-        display: flex;
+       .navigation.open {
+        display: block !important;
     }
 
     .navigation li {
+        display: block;
         width: 100%;
     }
 
     .navigation a {
         display: block;
+        width: 100%;
         padding: 1rem;
+
+        color: black;
         text-decoration: none;
         font-weight: bold;
         text-align: left;
         border-bottom: 1px solid rgba(255,255,255,0.08);
+        
+    }
+   .navigation a:hover {
+        background-color: #f4f4f4;
     }
 
-  .navigation a.active {
-    background-color: #003b5c;
-    color: #ffd700 !important;
-    border-left: 4px solid #ffd700;
-}
 
     #members.grid {
     display: grid;

@@ -89,3 +89,14 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('open');
 
 });
+
+// ACTIVE NAVIGATION LINK
+const currentPage = window.location.pathname.split('/').pop();
+
+document.querySelectorAll('.navigation a').forEach(link => {
+    const linkPage = new URL(link.href).pathname.split('/').pop();
+
+    if (linkPage === currentPage) {
+        link.classList.add('active');
+    }
+});
