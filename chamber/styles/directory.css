@@ -189,27 +189,6 @@ footer{
 #menu.open::before {
     content: "✖";
 }
-
-@media screen and (min-width: 900px) {
-
-    .join-container {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr;
-
-        gap: 4rem;
-
-        align-items: start;
-    }
-
-    .membership-section {
-
-        margin-top: 0;
-    }
-
-}
-
 @media screen and (min-width: 1025px) {
 
 .discover-grid {
@@ -269,14 +248,52 @@ footer{
         align-items: start;
     }
 
-    .join-form-section {
-        width: 100%;
+    .join-form-section h1 {
+        margin-bottom: 2rem;
     }
 
     .join-form-section form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .join-form-section label {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        font-weight: 700;
+    }
+
+    .join-form-section input,
+    .join-form-section select,
+    .join-form-section textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    .join-form-section textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .submit-btn {
+        width: fit-content;
+        padding: 1rem 2rem;
+        background: #003b5c;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .submit-btn:hover {
+        background: #005b8a;
     }
 
     .membership-section {
@@ -287,143 +304,20 @@ footer{
 
     .membership-card {
         background: #dff3e7;
+        border: 2px solid #aac4b3;
         border-radius: 20px;
-        padding: 2rem;
+        padding: 3rem 2rem;
         text-align: center;
         box-shadow: 0 4px 10px rgba(0,0,0,.1);
     }
-    .join-page {
 
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 2rem;
-
-    padding: 2rem;
-}
-
-.join-form-section h1 {
-
-    margin-bottom: 2rem;
-}
-
-form {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 1rem;
-}
-
-form label {
-
-    display: flex;
-
-    flex-direction: column;
-
-    font-weight: 700;
-
-    gap: .5rem;
-}
-
-form input,
-form textarea,
-form select {
-
-    padding: 1rem;
-
-    border-radius: 10px;
-
-    border: 1px solid #ccc;
-
-    font-size: 1rem;
-}
-
-textarea {
-
-    min-height: 120px;
-}
-
-.submit-btn {
-
-    background: #003b5c;
-
-    color: white;
-
-    border: none;
-
-    cursor: pointer;
-
-    font-weight: bold;
-
-    transition: .3s;
-}
-
-.submit-btn:hover {
-
-    background: #005b8a;
-}
-
-/* MEMBERSHIP */
-
-.membership-section {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 1.5rem;
-}
-
-.membership-card {
-    background: #dff3e7;
-
-    border: 2px solid #aac4b3;
-
-    border-radius: 20px;
-
-    padding: 2rem;
-
-    text-align: center;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
-    animation: fadeUp 1s ease;
-}
-
-.membership-card button {
-
-    margin-top: 1rem;
-
-    padding: .8rem 1.5rem;
-
-    border: none;
-
-    background: #003b5c;
-
-    color: white;
-
-    border-radius: 8px;
-
-    cursor: pointer;
-}
-
-@keyframes fadeUp {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(30px);
+    .membership-card button {
+        margin-top: 1rem;
+        padding: .8rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        background: #003b5c;
+        color: white;
+        cursor: pointer;
     }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-    }
-}
 }

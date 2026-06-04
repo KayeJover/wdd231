@@ -79,13 +79,6 @@ menuButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     menuButton.classList.toggle("open");
 });
-
-const lastModified = document.querySelector('#lastModified');
-
-lastModified.textContent =
-`Last Modification: ${document.lastModified}`;
-
-
 /* WEATHER API */
 
 const weatherURL =
