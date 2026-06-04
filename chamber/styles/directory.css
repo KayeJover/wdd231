@@ -16,6 +16,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+        overflow: visible;
+
 }
 
 .logo-title {
@@ -26,8 +28,8 @@ header {
 
 .logo-title img {
      display: block;
-     max-width: 100%;
-     height: auto;
+    width: 60px;
+    height: auto;
      margin-left:1px;
 }
 
@@ -47,7 +49,6 @@ nav {
       display: flex;
     justify-content: flex-end;
     gap: 1.5rem;
-    padding: .75rem 1rem;
     color: white;
     text-decoration: none;
     font-weight: bold;

@@ -1,9 +1,7 @@
-const lastModified =
-document.querySelector('#lastModified');
+const lastModified = document.querySelector("#lastModified");
 
 if (lastModified) {
-    lastModified.textContent =
-    `Last Modification: ${document.lastModified}`;
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
 }
 
 const menuButton = document.querySelector("#menu");

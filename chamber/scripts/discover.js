@@ -92,3 +92,9 @@ document.querySelectorAll('.navigation a').forEach(link => {
         link.classList.add('active');
     }
 });
+
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}

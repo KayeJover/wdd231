@@ -19,6 +19,11 @@ if (menuButton && navigation) {
     });
 
 }
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}
 
 // ACTIVE NAVIGATION LINK
 const currentPage = window.location.pathname.split('/').pop();
@@ -30,3 +35,4 @@ document.querySelectorAll('.navigation a').forEach(link => {
         link.classList.add('active');
     }
 });
+

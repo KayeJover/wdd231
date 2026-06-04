@@ -38,3 +38,9 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('open');
 
 });
+
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}
