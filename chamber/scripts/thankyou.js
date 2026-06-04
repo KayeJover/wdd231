@@ -22,11 +22,6 @@ params.get('membership');
 document.querySelector('#timestamp').textContent =
 params.get('timestamp');
 
-const lastModified =
-document.querySelector('#lastModified');
-
-lastModified.textContent =
-`Last Modification: ${document.lastModified}`;
 
 /* MOBILE MENU */
 

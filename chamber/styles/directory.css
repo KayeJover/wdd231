@@ -8,7 +8,7 @@ header {
     background-color: #003049;
     color: white;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
 }
 .top-header {
     max-width: 1500px;
@@ -80,12 +80,13 @@ main {
     width:5%;
     
 }
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
+#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 .menu button {
     padding: 0.7rem 1rem;
@@ -238,7 +239,7 @@ footer{
 
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
 
     .join-page {
         display: grid;
@@ -320,4 +321,15 @@ footer{
         color: white;
         cursor: pointer;
     }
+}
+.join-form-section input,
+.join-form-section select,
+.join-form-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.join-form-section img {
+    max-width: 100%;
+    height: auto;
 }

@@ -9,6 +9,8 @@
         background-color: #1f3b57;
         border-radius: 10px;
         position: relative;
+            overflow: visible;
+
     }
 
     .top-header {
@@ -16,10 +18,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
-            position: relative;
-
-
-    }
+        position: relative;
+            overflow: visible;
+}
     nav {
     flex-shrink: 0;
 }
@@ -43,11 +44,18 @@
 
     /* HAMBURGER */
 
-     nav {
+      nav {
         position: relative;
     }
 
-   
+    #menu {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 
     #menu::before {
         content: "☰";
@@ -56,48 +64,51 @@
     #menu.open::before {
         content: "✖";
     }
-     nav {
-        position: relative;
-    }
 
     .navigation {
         display: none;
         position: absolute;
+
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: 0;
+
+        width: 220px;
+        min-width: 220px;
 
         background: white;
 
-        flex-direction: column;
         padding: 0;
         margin: 0;
 
         z-index: 9999;
+
+        list-style: none;
     }
 
     .navigation.open {
-        display: flex;
+        display: block !important;
     }
 
     .navigation li {
+        display: block;
         width: 100%;
-        list-style: none;
     }
 
     .navigation a {
         display: block;
+        width: 100%;
+
+        box-sizing: border-box;
+
         padding: 1rem;
+
         color: black;
         text-decoration: none;
+
         border-bottom: 1px solid #ddd;
     }
 
-    #menu {
-        display: block;
-        position: relative;
-        z-index: 10000;
-    }
+   
 
     #members.grid {
     display: grid;
@@ -162,10 +173,48 @@
     height: 80px;
     object-fit: contain;
 }
-    
-/* JOIN PAGE */
+}
 
-.join-page {
+@media screen and (max-width: 320px) {
+
+    .join-page {
+        padding: .75rem;
+        gap: 1.5rem;
+    }
+
+    .join-form-section h1,
+    .membership-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        padding: .75rem;
+        font-size: .9rem;
+    }
+
+    .membership-card {
+        padding: 1rem;
+    }
+
+    .membership-card h3 {
+        font-size: 1rem;
+    }
+
+    .membership-card button {
+        width: 100%;
+        padding: .75rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+/* JOIN PAGE */
+@media screen and (max-width: 767px) {
+    .join-page {
 
     display: flex;
 
@@ -173,7 +222,7 @@
 
     gap: 2rem;
 
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .join-form-section h1 {

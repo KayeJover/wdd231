@@ -5,12 +5,20 @@ new Date().toISOString();
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    menuButton.classList.toggle("open");
+if (menuButton && navigation) {
 
-    console.log(navigation.className);
-});
+    menuButton.addEventListener("click", () => {
+
+        navigation.classList.toggle("open");
+
+        menuButton.classList.toggle("open");
+
+        console.log("clicked");
+        console.log(navigation.className);
+
+    });
+
+}
 
 // ACTIVE NAVIGATION LINK
 const currentPage = window.location.pathname.split('/').pop();
