@@ -72,13 +72,6 @@ listButton.addEventListener('click', () => {
 
 });
 
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
-
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    menuButton.classList.toggle("open");
-});
 /* WEATHER API */
 
 const weatherURL =
@@ -208,4 +201,11 @@ document.querySelectorAll('.navigation a').forEach(link => {
     if (linkPage === currentPage) {
         link.classList.add('active');
     }
+});
+
+const menuButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+menuButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
 });
