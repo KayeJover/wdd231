@@ -4,12 +4,7 @@ if (lastModified) {
     lastModified.textContent = `Last Modified: ${document.lastModified}`;
 }
 
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-});
 
 // ACTIVE NAVIGATION LINK
 const currentPage = window.location.pathname.split('/').pop();
@@ -25,7 +20,7 @@ document.querySelectorAll('.navigation a').forEach(link => {
 /* WEATHER API */
 
 const weatherURL =
-'https://api.openweathermap.org/data/2.5/weather?lat=10.6765&lon=122.9509&units=metric&appid=50e2d3aef73638db36c2b4e6f0084faa';
+    'https://api.openweathermap.org/data/2.5/weather?lat=10.6765&lon=122.9509&units=metric&appid=50e2d3aef73638db36c2b4e6f0084faa';
 
 async function getWeather() {
 
@@ -41,17 +36,17 @@ async function getWeather() {
 
         const sunrise =
             new Date(data.sys.sunrise * 1000)
-            .toLocaleTimeString('en-US', {
-                hour: 'numeric',
-                minute: '2-digit'
-            });
+                .toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit'
+                });
 
         const sunset =
             new Date(data.sys.sunset * 1000)
-            .toLocaleTimeString('en-US', {
-                hour: 'numeric',
-                minute: '2-digit'
-            });
+                .toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit'
+                });
 
         document.querySelector('#weather').innerHTML = `
         
@@ -111,7 +106,7 @@ async function getWeather() {
         console.error(error);
 
         document.querySelector('#weather').innerHTML =
-        `<p>Weather unavailable.</p>`;
+            `<p>Weather unavailable.</p>`;
     }
 
 }
@@ -120,7 +115,7 @@ getWeather();
 /* FORECAST API */
 
 const forecastURL =
-'https://api.openweathermap.org/data/2.5/forecast?lat=10.6765&lon=122.9509&units=metric&appid=50e2d3aef73638db36c2b4e6f0084faa';
+    'https://api.openweathermap.org/data/2.5/forecast?lat=10.6765&lon=122.9509&units=metric&appid=50e2d3aef73638db36c2b4e6f0084faa';
 
 async function getForecast() {
 
@@ -146,8 +141,8 @@ async function getForecast() {
             forecastContainer.innerHTML += `
                 <p>
                     ${date.toLocaleDateString('en-US', {
-                        weekday: 'long'
-                    })}
+                weekday: 'long'
+            })}
                     :
                     <strong>${Math.round(day.main.temp)}°C</strong>
                 </p>
@@ -159,7 +154,7 @@ async function getForecast() {
         console.error(error);
 
         document.querySelector('#forecast').innerHTML =
-        `<p>Forecast unavailable.</p>`;
+            `<p>Forecast unavailable.</p>`;
     }
 
 }
@@ -231,3 +226,14 @@ function displaySpotlights(members) {
     });
 
 }
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+
+    menuButton.textContent =
+        navigation.classList.contains("open")
+            ? "✕"
+            : "☰";
+});
