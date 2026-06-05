@@ -67,7 +67,7 @@
 
     overflow: hidden;
 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 
     min-height: 250px;
 }
@@ -98,6 +98,7 @@
 
     font-size: 1rem;
 }
+
 .weather-info {
     display: flex;
 
@@ -117,6 +118,7 @@
 .weather-info p {
     margin: 0.3rem 0;
 }
+
 /* =========================
    SPOTLIGHTS
 ========================= */
@@ -140,7 +142,7 @@
 
     text-align: center;
 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 
     min-height: 320px;
 
