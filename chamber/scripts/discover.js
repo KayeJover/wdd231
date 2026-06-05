@@ -57,28 +57,41 @@ window.addEventListener("click", (e) => {
 
 const visitMessage = document.querySelector("#visitor-message");
 
-const lastVisit = localStorage.getItem("lastVisit");
-const now = Date.now();
+if (visitMessage) {
 
-if (!lastVisit) {
-  visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-} else {
-  const timeDifference = now - Number(lastVisit);
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
 
-  const daysBetweenVisits = Math.floor(
-    timeDifference / (1000 * 60 * 60 * 24)
-  );
+    if (!lastVisit) {
 
-  if (daysBetweenVisits < 1) {
-    visitMessage.textContent = "Back so soon! Awesome!";
-  } else if (daysBetweenVisits === 1) {
-    visitMessage.textContent = "You last visited 1 day ago.";
-  } else {
-    visitMessage.textContent = `You last visited ${daysBetweenVisits} days ago.`;
-  }
+        visitMessage.textContent =
+            "Welcome! Let us know if you have any questions.";
+
+    } else {
+
+        const daysBetweenVisits = Math.floor(
+            (now - Number(lastVisit)) / 86400000
+        );
+
+        if (daysBetweenVisits < 1) {
+
+            visitMessage.textContent =
+                "Back so soon! Awesome!";
+
+        } else if (daysBetweenVisits === 1) {
+
+            visitMessage.textContent =
+                "You last visited 1 day ago.";
+
+        } else {
+
+            visitMessage.textContent =
+                `You last visited ${daysBetweenVisits} days ago.`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", now);
 }
-
-localStorage.setItem("lastVisit", now);
 
 
 
