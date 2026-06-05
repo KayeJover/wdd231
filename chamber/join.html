@@ -24,7 +24,6 @@
 >
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/small-directory.css">
-
     <link rel="stylesheet" href="styles/medium.css">
 
     
@@ -185,27 +184,36 @@
 
         <h2>Membership Levels</h2>
 
-        <div class="membership-card">
-            <h3>Non Profit Membership Level</h3>
-            <button>Learn More</button>
-        </div>
+           <div class="membership-card">
+        <h3>NP Membership</h3>
+        <a href="#" onclick="document.getElementById('npModal').showModal(); return false;">
+            Learn More
+        </a>
+    </div>
 
-        <div class="membership-card bronze">
-            <h3>Bronze Membership Level</h3>
-            <button>Learn More</button>
-        </div>
+    <div class="membership-card">
+        <h3>Bronze Membership</h3>
+        <a href="#" onclick="document.getElementById('bronzeModal').showModal(); return false;">
+            Learn More
+        </a>
+    </div>
 
-        <div class="membership-card silver">
-            <h3>Silver Membership Level</h3>
-            <button>Learn More</button>
-        </div>
+    <div class="membership-card">
+        <h3>Silver Membership</h3>
+        <a href="#" onclick="document.getElementById('silverModal').showModal(); return false;">
+            Learn More
+        </a>
+    </div>
 
-        <div class="membership-card gold">
-            <h3>Gold Membership Level</h3>
-            <button>Learn More</button>
-        </div>
+    <div class="membership-card">
+        <h3>Gold Membership</h3>
+        <a href="#" onclick="document.getElementById('goldModal').showModal(); return false;">
+            Learn More
+        </a>
+    </div>
 
     </aside>
+   
 
 </main>
 
@@ -245,6 +253,52 @@
     </div>
 
     </footer>
+<dialog id="npModal">
+    <h2>NP Membership</h2>
+    <p>No membership fee.</p>
+    <p>Perfect for non-profit organizations.</p>
+    <button onclick="document.getElementById('npModal').close()">
+        Close
+    </button>
+</dialog>
 
+<dialog id="bronzeModal">
+    <h2>Bronze Membership</h2>
+    <p>Basic membership package.</p>
+    <ul>
+        <li>Business Directory Listing</li>
+        <li>Networking Opportunities</li>
+        <li>Monthly Newsletter</li>
+    </ul>
+    <button onclick="document.getElementById('bronzeModal').close()">
+        Close
+    </button>
+</dialog>
+
+<dialog id="silverModal">
+    <h2>Silver Membership</h2>
+    <ul>
+        <li>All Bronze Benefits</li>
+        <li>Event Discounts</li>
+        <li>Training Workshops</li>
+        <li>Business Promotion</li>
+    </ul>
+    <button onclick="document.getElementById('silverModal').close()">
+        Close
+    </button>
+</dialog>
+
+<dialog id="goldModal">
+    <h2>Gold Membership</h2>
+    <ul>
+        <li>All Silver Benefits</li>
+        <li>Homepage Spotlight Feature</li>
+        <li>Premium Advertising</li>
+        <li>VIP Event Access</li>
+    </ul>
+    <button onclick="document.getElementById('goldModal').close()">
+        Close
+    </button>
+</dialog>
 </body>
 </html>

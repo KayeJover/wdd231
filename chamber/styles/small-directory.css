@@ -13,7 +13,6 @@
         background-color: #1f3b57;
         border-radius: 10px;
         position: relative;
-        overflow: visible;
         z-index: 1000;
 
 
@@ -25,10 +24,7 @@
         align-items: center;
         padding: 1rem;
         position: relative;
-        overflow: visible;
     }
-
-
 
     .logo-title {
         display: flex;
@@ -79,13 +75,16 @@
 
         list-style: none;
         margin: 0;
-        padding: 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+
+        padding: .5rem 0;
     }
 
     .navigation.open {
         display: flex;
         flex-direction: column;
-      
+
     }
 
     .navigation li {
@@ -95,7 +94,11 @@
     .navigation li a {
         display: block;
         padding: 1rem;
+        color: white;
         text-decoration: none;
+        font-weight: 600;
+
+        transition: background .3s ease;
     }
 
 
@@ -296,45 +299,81 @@
     /* MEMBERSHIP */
 
     .membership-section {
-
         display: flex;
-
         flex-direction: column;
-
         gap: 1.5rem;
     }
 
     .membership-card {
         background: #dff3e7;
-
         border: 2px solid #aac4b3;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
 
-        border-radius: 20px;
+        /* Initial state */
+        opacity: 0;
+        transform: translateY(30px);
 
-        padding: 2rem;
-
-        text-align: center;
-
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-        animation: fadeUp 1s ease;
+        /* Animation */
+        animation: fadeUp 0.8s ease forwards;
     }
 
-    .membership-card button {
+    .membership-card:nth-of-type(1) {
+        animation-delay: .2s;
+    }
 
+    .membership-card:nth-of-type(2) {
+        animation-delay: .4s;
+    }
+
+    .membership-card:nth-of-type(3) {
+        animation-delay: .6s;
+    }
+
+    .membership-card:nth-of-type(4) {
+        animation-delay: .8s;
+    }
+
+    .np-card {
+        animation-delay: .2s;
+    }
+
+    .bronze-card {
+        animation-delay: .4s;
+    }
+
+    .silver-card {
+        animation-delay: .6s;
+    }
+
+    .gold-card {
+        animation-delay: .8s;
+    }
+
+    .membership-card a {
+        display: inline-block;
         margin-top: 1rem;
-
-        padding: .8rem 1.5rem;
-
-        border: none;
-
+        text-decoration: none;
         background: #003b5c;
-
         color: white;
-
+        padding: .75rem 1rem;
         border-radius: 8px;
+    }
 
-        cursor: pointer;
+    dialog {
+        width: min(500px, 90%);
+        border: none;
+        border-radius: 15px;
+        padding: 2rem;
+    }
+
+    dialog::backdrop {
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .membership-card button:hover {
+        background: #005b8a;
     }
 
     @keyframes fadeUp {
