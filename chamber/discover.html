@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover Bacolod</title>
-  <meta name="description" content="Bacolod Chamber of Commerce Discover Page">
-  <meta name="author" content="Kaye Gualingco">
-      
-  <link rel="icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Bacolod</title>
+    <meta name="description" content="Bacolod Chamber of Commerce Discover Page">
+    <meta name="author" content="Kaye Gualingco">
 
-  <meta property="og:title" content="Bacolod Chamber of Commerce Business Discover">
-  <meta property="og:description" content="Discover Bacolod City, the City of Smiles, featuring historical landmarks, cultural attractions, local businesses, and popular destinations.">
-  <meta property="og:image" content="https://kayejover.github.io/wdd231/images/masskara.webp">
-  <meta property="og:url" content="https://kayejover.github.io/wdd231/chamber/discover.html">
-  <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.ico">
 
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/directory.css">
- <link rel="stylesheet" href="styles/small-directory.css">
+    <meta property="og:title" content="Bacolod Chamber of Commerce Business Discover">
+    <meta property="og:description"
+        content="Discover Bacolod City, the City of Smiles, featuring historical landmarks, cultural attractions, local businesses, and popular destinations.">
+    <meta property="og:image" content="https://kayejover.github.io/wdd231/images/masskara.webp">
+    <meta property="og:url" content="https://kayejover.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
 
-
-  <script type="module" src="scripts/discover.js" defer></script>
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/small-directory.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    
+    <script type="module" src="scripts/discover.js" defer></script>
 
 </head>
 
 <body>
 
-  <header>
+    <header>
 
-    <div class="top-header">
-        <div class="logo-title">
-           <img 
-    src="images/masskara.webp" alt="Logo" width="60" height="60">
-            <h1>Bacolod Chamber of Commerce</h1>
+        <div class="top-header">
+            <div class="logo-title">
+                <img src="images/masskara.webp" alt="Logo" width="60" height="60">
+                <h1>Bacolod Chamber of Commerce</h1>
 
+            </div>
+
+            <nav>
+                <button id="menu" aria-label="Open Menu">&#9776;</button>
+
+                <ul class="navigation">
+                    <li><a href="https://kayejover.github.io/wdd231/chamber/index.html">Home</a></li>
+                    <li><a href="https://kayejover.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://kayejover.github.io/wdd231/chamber/join.html">Join</a></li>
+                    <li><a href="https://kayejover.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <nav>
-            <button id="menu" aria-label="Open Menu">&#9776;</button>
-        
-        <ul class="navigation">
-                <li><a href="https://kayejover.github.io/wdd231/chamber/index.html">Home</a></li>
-                <li><a href="https://kayejover.github.io/wdd231/chamber/directory.html">Directory</a></li>                
-                <li><a href="https://kayejover.github.io/wdd231/chamber/join.html">Join</a></li>
-                <li><a href="https://kayejover.github.io/wdd231/chamber/discover.html">Discover</a></li>
-            </ul>
-        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Discover Bacolod City</h1>
+
+        <section id="visitor-message" class="visitor-message"></section>
+
+        <section id="discover-cards" class="discover-grid"></section>
+<div id="place-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
     </div>
+</div>
+    </main>
 
-</header>
-
-<main>
-
-  <h1>Discover Bacolod City</h1>
-
-  <section id="visitor-message" class="visitor-message"></section>
-
-  <section id="discover-cards" class="discover-grid"></section>
-
-</main>
-
-  <footer>
+    <footer>
 
         <div class="footer-container">
 
-        <div class="footer-left">
-            <h3>Bacolod Chamber of Commerce</h3>
-            <p>Lacson Street</p>
-            <p>Bacolod City, Philippines</p>
-            <p>info@bacolodcc.org</p>
-            <p>+63 912 345 6789</p>
+            <div class="footer-left">
+                <h3>Bacolod Chamber of Commerce</h3>
+                <p>Lacson Street</p>
+                <p>Bacolod City, Philippines</p>
+                <p>info@bacolodcc.org</p>
+                <p>+63 912 345 6789</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#">
+                    <img src="images/facebook.webp" alt="Facebook" width="45" height="45">
+                </a>
+
+                <a href="#">
+                    <img src="images/instagram.webp" alt="Instagram" width="45" height="45">
+                </a>
+
+                <a href="#">
+                    <img src="images/linkedin.webp" alt="LinkedIn" width="45" height="45">
+                </a>
+
+            </div>
+
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Kaye Gualingco</p>
+                <p>&copy; 2026 Bacolod Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
         </div>
-
-         <div class="footer-socials">
-            <a href="#">
-                <img src="images/facebook.webp" alt="Facebook" width="45" height="45">
-            </a>
-
-            <a href="#">
-                <img src="images/instagram.webp" alt="Instagram" width="45" height="45">
-            </a>
-
-            <a href="#">
-                <img src="images/linkedin.webp" alt="LinkedIn" width="45" height="45">
-            </a>
-
-        </div>
-
-          <div class="footer-right">
-            <p>WDD231 Class Project</p>
-            <p>Kaye Gualingco</p>
-            <p>&copy; 2026 Bacolod Chamber of Commerce</p>
-          <p id="lastModified"></p>
-        </div>
-    </div>
 
     </footer>
 
 </body>
+
 </html>

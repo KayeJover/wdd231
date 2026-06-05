@@ -1,27 +1,108 @@
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 641px) and (max-width: 1024px) {
 
     .discover-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
-
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4"
-            "card5"
-            "card6"
-            "card7"
-            "card8";
     }
 
+    .discover-card {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image address"
+            "button button";
+
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .discover-card h2 {
+        grid-area: title;
+        margin: 0;
+    }
+
+    .discover-card figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+    .discover-card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .discover-card p {
+        grid-area: desc;
+        margin: 0;
+    }
+
+    .discover-card address {
+        grid-area: address;
+        font-style: italic;
+    }
+
+    .discover-card button {
+        grid-area: button;
+        width: 100%;
+        padding: .75rem;
+        border: none;
+        border-radius: 25px;
+        background: #333;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Assignment hover effect */
     .discover-card img:hover {
         transform: scale(1.05);
-        transition: 0.3s ease;
+        transition: .3s ease;
         filter: brightness(1.1);
     }
+    .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+}
 
+.modal-content {
+    background: white;
+    width: 80%;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    animation: popup .25s ease;
+
+}
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
 }
 
 /* MEDIUM VIEW */

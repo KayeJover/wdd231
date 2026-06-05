@@ -1,74 +1,84 @@
 import { places } from "../data/places.mjs";
 
-const cardContainer = document.querySelector("#discover-cards");
+// DISPLAY DISCOVER CARDS
+const cardsContainer = document.querySelector("#discover-cards");
 
-places.forEach((place, index) => {
-
+places.forEach(place => {
   const card = document.createElement("article");
-
   card.classList.add("discover-card");
-  card.style.gridArea = `card${index + 1}`;
 
   card.innerHTML = `
-    <h2>${place.name}</h2>
+        <h2>${place.name}</h2>
 
-    <figure>
-      <img
-        src="${place.image}"
-        alt="${place.name}"
-        loading="lazy"
-        width="300"
-        height="200">
-    </figure>
+        <figure>
+            <img src="${place.image}" alt="${place.name}" loading="lazy">
+        </figure>
 
-    <address>${place.address}</address>
+        <p>${place.description}</p>
 
-    <p>${place.description}</p>
+        <address>${place.address}</address>
 
-    <button>Learn More</button>
-  `;
+       <button
+  class="learn-more-btn"
+  data-name="${place.name}"
+  data-details="${place.details}">
+  Learn More
+</button>
+    `;
 
-  cardContainer.appendChild(card);
+  cardsContainer.appendChild(card);
 });
 
+const modal = document.querySelector("#place-modal");
+const modalTitle = document.querySelector("#modal-title");
+const modalDescription = document.querySelector("#modal-description");
+const closeModal = document.querySelector(".close-modal");
 
-const message = document.querySelector("#visitor-message");
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("learn-more-btn")) {
+
+        modalTitle.textContent = e.target.dataset.name;
+        modalDescription.textContent = e.target.dataset.description;
+        modalDescription.textContent = e.target.dataset.details;
+
+        modal.style.display = "block";
+    }
+});
+
+closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+const visitMessage = document.querySelector("#visitor-message");
 
 const lastVisit = localStorage.getItem("lastVisit");
-
-const currentVisit = Date.now();
+const now = Date.now();
 
 if (!lastVisit) {
-
-  message.textContent =
-    "Welcome! Let us know if you have any questions.";
-
+  visitMessage.textContent = "Welcome! Let us know if you have any questions.";
 } else {
+  const timeDifference = now - Number(lastVisit);
 
-  const milliseconds = currentVisit - Number(lastVisit);
+  const daysBetweenVisits = Math.floor(
+    timeDifference / (1000 * 60 * 60 * 24)
+  );
 
-  const days = Math.floor(milliseconds / 86400000);
-
-  if (days < 1) {
-
-    message.textContent =
-      "Back so soon! Awesome!";
-
-  } else if (days === 1) {
-
-    message.textContent =
-      "You last visited 1 day ago.";
-
+  if (daysBetweenVisits < 1) {
+    visitMessage.textContent = "Back so soon! Awesome!";
+  } else if (daysBetweenVisits === 1) {
+    visitMessage.textContent = "You last visited 1 day ago.";
   } else {
-
-    message.textContent =
-      `You last visited ${days} days ago.`;
-
+    visitMessage.textContent = `You last visited ${daysBetweenVisits} days ago.`;
   }
-
 }
 
-localStorage.setItem("lastVisit", currentVisit);
+localStorage.setItem("lastVisit", now);
 
 
 
@@ -76,22 +86,22 @@ const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
 menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
+  navigation.classList.toggle("open");
 });
 
 // ACTIVE NAVIGATION LINK
 const currentPage = window.location.pathname.split('/').pop();
 
 document.querySelectorAll('.navigation a').forEach(link => {
-    const linkPage = new URL(link.href).pathname.split('/').pop();
+  const linkPage = new URL(link.href).pathname.split('/').pop();
 
-    if (linkPage === currentPage) {
-        link.classList.add('active');
-    }
+  if (linkPage === currentPage) {
+    link.classList.add('active');
+  }
 });
 
 const lastModified = document.querySelector("#lastModified");
 
 if (lastModified) {
-    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+  lastModified.textContent = `Last Modified: ${document.lastModified}`;
 }
