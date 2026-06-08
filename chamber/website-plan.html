@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Website Plan </title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Kaye Gualingco - Wesite Plan ">
+    <meta name="author" content="Kaye Gualingco">
+    <link rel="stylesheet" href="styles/website-plan.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="scripts/website-plan.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Ocean Shuck</h1>
+    </header>
+
+    <main>
+        <div id="header"></div>
+        <section>
+            <h2>Site Name:</h2>
+            <p>Ocean Shuck is a popular seafood boil located in Bacolod, Philippines, known for serving fresh and
+                flavorful seafood dishes.
+                Ocean Shuck has earned a reputation as the go-to spot for seafood lovers in Bacolod, offering a unique
+                blend of local and international flavors with a focus on quality and sustainability. </p>
+        </section>
+        <section>
+            <h2>Site Purpose:</h2>
+            <p>Ocean Shuck's website serves as a digital storefront that showcases its seafood menu, restaurant
+                atmosphere, promotions, and customer services. The site aims to attract both local diners and tourists
+                by providing easy access to menu information, reservation options, operating hours, and contact details.
+            </p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios:</h2>
+            <ul>
+                <li>
+                    <p>What seafood specialties are most popular at Ocean Shuck?</p>
+                </li>
+                <li>
+                    <p>Can I make a reservation online?</p>
+                </li>
+                <li>
+                    <p>Does Ocean Shuck offer delivery, takeout, or catering services?</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema:</h2>
+            <ul id="color-schema">
+                <li>
+                    <p> Beige: #F8F4E3 - backgrounds.</p>
+                </li>
+                <li>
+                    <p> Dark Slate: #264653 - text.</p>
+                </li>
+                <li>
+                    <p>Seafoam Green: #2A9D8F - nav background.</p>
+                </li>
+                <li>
+                    <p>Deep Ocean Blue: #023E8A - header background</p>
+                </li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>Typography:</h2>
+            <ul id="typography">
+                <li>
+                    <p id="typo1">Header Title Font: Playfair Display, serif</p>
+                </li>
+                <li>
+                    <p id="typo2">Sub-Headings Font: Kalam</p>
+                </li>
+                <li>
+                    <p>Body text font: Poppins, sans-serif</p>
+                </li>
+            </ul>
+        </section>
+        <section id="wireframes">
+            <h2>Wireframes:</h2>
+            <h3 id="mobile">Wireframe for Mobile View</h3>
+            <img id="wireframe-mobile" src="images/small.png" alt="wireframe for mobile" loading="lazy" width="211"
+                height="568">
+
+            <h3 id="desktop">Wireframe for Desktop View</h3>
+            <img id="wireframe-desktop" src="images/large.png" alt="wireframe for desktop" loading="lazy" width="388"
+                height="506">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+
+
+    </script>
+</body>
+
+</html>
