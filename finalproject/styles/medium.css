@@ -1,0 +1,128 @@
+/* ==========================
+   TABLET VIEW
+   medium.css
+========================== */
+
+@media screen and (min-width: 641px) {
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: transparent;
+        gap: 1.5rem;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        color: white;
+        padding: .5rem 1rem;
+    }
+
+    .navigation a.active {
+        border-bottom: 3px solid var(--secondary);
+    }
+
+    /* ==========================
+       HERO
+    ========================== */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero-content h2 {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+    /* ==========================
+       FEATURED DISHES
+    ========================== */
+
+    #featured-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* ==========================
+       BENEFITS
+    ========================== */
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* ==========================
+       CTA
+    ========================== */
+
+    .cta {
+        display: grid;
+        grid-template-columns: 200px 1fr auto;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .cta h2 {
+        text-align: left;
+    }
+
+    .cta .btn {
+        margin: 0;
+    }
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        text-align: left;
+    }
+
+    /* ==========================
+       FORMS
+    ========================== */
+
+    form {
+        padding: 2rem;
+    }
+
+    /* ==========================
+       MODAL
+    ========================== */
+
+    dialog {
+        width: 600px;
+    }
+
+}

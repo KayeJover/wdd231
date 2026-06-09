@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ocean Shuck | Fresh Seafood Restaurant in Bacolod</title>
+
+    <meta name="description"
+        content="Ocean Shuck serves fresh seafood, grilled oysters, seafood boils, and family-style dining in Bacolod City.">
+
+    <meta name="author" content="Kaye Gualingco">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/featured.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="images/logo.webp" alt="Ocean Shuck Logo" width="80" height="80">
+
+            <div>
+                <h1>Ocean Shuck</h1>
+                <p>Seafood Restaurant</p>
+            </div>
+
+        </div>
+
+        <button id="menu" aria-label="Open Navigation Menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav>
+
+            <ul class="navigation">
+
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="reservations.html">Reservations</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <img src="images/hero-seafood.webp" alt="Fresh Seafood Platter" width="900" height="500">
+
+            <div class="hero-content">
+
+                <h2>Fresh Seafood. Ocean Flavor.</h2>
+
+                <p>
+                    Experience the best seafood made with fresh ingredients and served with passion.
+                </p>
+
+                <a href="reservations.html" class="btn">
+                    Reserve A Table
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- FEATURED DISHES -->
+
+        <section class="featured">
+
+            <h2>Featured Dishes</h2>
+
+            <div id="featured-container">
+
+            </div>
+            <dialog id="dishModal">
+
+                <button id="closeModal">
+                    ✕
+                </button>
+
+                <h2 id="modalTitle"></h2>
+
+                <img id="modalImage" src="" alt="" width="300" height="200">
+
+                <p id="modalPrice"></p>
+
+                <p id="modalDescription"></p>
+
+            </dialog>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+
+        <section class="benefits">
+
+            <h2>Why Choose Ocean Shuck?</h2>
+
+            <div class="benefit-grid">
+
+                <article>
+                    <h3>Fresh Daily Seafood</h3>
+                    <p>
+                        We serve only the freshest seafood sourced daily.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Locally Sourced</h3>
+                    <p>
+                        Supporting local fishermen and suppliers.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Family Friendly</h3>
+                    <p>
+                        A comfortable place for families and friends.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Coastal Inspired</h3>
+                    <p>
+                        Enjoy relaxing ocean-inspired dining.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <img src="images/cta.webp" alt="Seafood Dish" width="300" height="200">
+
+            <div>
+
+                <h2>Ready To Enjoy A Seafood Feast?</h2>
+
+                <p>
+                    Book your table now and enjoy an unforgettable dining experience.
+                </p>
+
+            </div>
+
+            <a href="reservations.html" class="btn">
+                Book Your Table
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <section>
+
+                <h3>Ocean Shuck</h3>
+
+                <p>
+                    Serving fresh seafood with passion.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="reservations.html">Reservations</a></li>
+
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h3>Hours</h3>
+
+                <p>Mon - Thu: 11:00 AM - 10:00 PM</p>
+                <p>Fri - Sat: 11:00 AM - 11:00 PM</p>
+                <p>Sunday: 10:00 AM - 9:00 PM</p>
+
+            </section>
+
+            <section>
+
+                <h3>Contact</h3>
+
+                <p>Lacson St., Bacolod City</p>
+                <p>(034) 123-4567</p>
+                <p>oceanshuck@gmail.com</p>
+
+            </section>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Ocean Shuck. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

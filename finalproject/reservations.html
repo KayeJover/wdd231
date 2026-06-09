@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservations | Ocean Shuck</title>
+
+    <meta name="description" content="Reserve a table at Ocean Shuck Seafood Restaurant.">
+
+    <meta name="author" content="Kaye Gualingco">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/reservations.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-area">
+            <img src="images/logo.webp" alt="Ocean Shuck Logo" width="80" height="80">
+
+            <div>
+                <h1>Ocean Shuck</h1>
+                <p>Seafood Restaurant</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open Navigation Menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-header">
+
+            <h2>Reserve Your Table</h2>
+
+            <p>
+                Book your seafood dining experience with us.
+            </p>
+
+        </section>
+
+        <section class="reservation-section">
+
+            <form action="thankyou.html" method="get" class="reservation-form">
+
+                <label for="fullname">
+                    Full Name
+                </label>
+
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="reservationDate">
+                    Reservation Date
+                </label>
+
+                <input type="date" id="reservationDate" name="reservationDate" required>
+
+                <label for="reservationTime">
+                    Reservation Time
+                </label>
+
+                <input type="time" id="reservationTime" name="reservationTime" required>
+
+                <label for="guests">
+                    Number of Guests
+                </label>
+
+                <select id="guests" name="guests" required>
+
+                    <option value="">
+                        Select Guests
+                    </option>
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8+">8+</option>
+
+                </select>
+
+                <label for="occasion">
+                    Occasion
+                </label>
+
+                <select id="occasion" name="occasion">
+
+                    <option value="">
+                        Select Occasion
+                    </option>
+
+                    <option value="Birthday">
+                        Birthday
+                    </option>
+
+                    <option value="Anniversary">
+                        Anniversary
+                    </option>
+
+                    <option value="Family Gathering">
+                        Family Gathering
+                    </option>
+
+                    <option value="Business Meeting">
+                        Business Meeting
+                    </option>
+
+                </select>
+
+                <label for="requests">
+                    Special Requests
+                </label>
+
+                <textarea id="requests" name="requests" rows="5"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Reserve Table" class="btn">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <section>
+                <h3>Ocean Shuck</h3>
+                <p>Serving fresh seafood with passion.</p>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Hours</h3>
+
+                <p>Mon–Thu: 11:00 AM – 10:00 PM</p>
+                <p>Fri–Sat: 11:00 AM – 11:00 PM</p>
+                <p>Sunday: 10:00 AM – 9:00 PM</p>
+            </section>
+
+            <section>
+                <h3>Contact</h3>
+
+                <p>Lacson Street, Bacolod City</p>
+                <p>(034) 123-4567</p>
+                <p>oceanshuck@gmail.com</p>
+            </section>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Ocean Shuck. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

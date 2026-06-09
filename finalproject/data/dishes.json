@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Garlic Butter Shrimp",
+    "price": 399,
+    "image": "images/garlic-butter-shrimp.webp",
+    "description": "Fresh shrimp sautéed in rich garlic butter sauce."
+  },
+  {
+    "id": 2,
+    "name": "Seafood Boil Feast",
+    "price": 899,
+    "image": "images/seafood-boil.webp",
+    "description": "A generous seafood feast with shrimp, crab, mussels, and corn."
+  },
+  {
+    "id": 3,
+    "name": "Grilled Oysters",
+    "price": 299,
+    "image": "images/grilled-oysters.webp",
+    "description": "Fresh oysters grilled with garlic, cheese, and herbs."
+  },
+  {
+    "id": 4,
+    "name": "Crispy Calamari",
+    "price": 279,
+    "image": "images/calamari.webp",
+    "description": "Golden fried calamari served with a tangy dipping sauce."
+  },
+  {
+    "id": 5,
+    "name": "Lobster Thermidor",
+    "price": 1299,
+    "image": "images/lobster-thermidor.webp",
+    "description": "Classic lobster dish baked with creamy cheese sauce."
+  },
+  {
+    "id": 6,
+    "name": "Baked Scallops",
+    "price": 349,
+    "image": "images/baked-scallops.webp",
+    "description": "Scallops baked with butter, garlic, and parmesan cheese."
+  },
+  {
+    "id": 7,
+    "name": "Seafood Paella",
+    "price": 699,
+    "image": "images/seafood-paella.webp",
+    "description": "Spanish-style rice loaded with fresh seafood."
+  },
+  {
+    "id": 8,
+    "name": "Grilled Tuna Steak",
+    "price": 499,
+    "image": "images/tuna-steak.webp",
+    "description": "Tender tuna steak grilled and seasoned to perfection."
+  },
+  {
+    "id": 9,
+    "name": "Butter Garlic Crab",
+    "price": 799,
+    "image": "images/garlic-crab.webp",
+    "description": "Fresh crab cooked in a flavorful garlic butter sauce."
+  },
+  {
+    "id": 10,
+    "name": "Fish and Chips",
+    "price": 329,
+    "image": "images/fish-chips.webp",
+    "description": "Crispy battered fish served with golden fries."
+  },
+  {
+    "id": 11,
+    "name": "Seafood Sinigang",
+    "price": 449,
+    "image": "images/seafood-sinigang.webp",
+    "description": "A Filipino sour soup filled with fresh seafood."
+  },
+  {
+    "id": 12,
+    "name": "Shrimp Alfredo Pasta",
+    "price": 399,
+    "image": "images/shrimp-alfredo.webp",
+    "description": "Creamy Alfredo pasta topped with succulent shrimp."
+  },
+  {
+    "id": 13,
+    "name": "Mussels in White Wine Sauce",
+    "price": 379,
+    "image": "images/mussels.webp",
+    "description": "Fresh mussels simmered in a rich white wine sauce."
+  },
+  {
+    "id": 14,
+    "name": "Seafood Pizza",
+    "price": 549,
+    "image": "images/seafood-pizza.webp",
+    "description": "Thin crust pizza topped with shrimp, squid, and mussels."
+  },
+  {
+    "id": 15,
+    "name": "Ocean Shuck Platter",
+    "price": 1499,
+    "image": "images/ocean-shuck-platter.webp",
+    "description": "Our signature seafood platter featuring the best of the ocean."
+  }
+]

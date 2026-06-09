@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Ocean Shuck</title>
+
+    <meta name="description"
+        content="Contact Ocean Shuck Seafood Restaurant. Find our location, hours, phone number, and send us a message.">
+
+    <meta name="author" content="Kaye Gualingco">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="images/logo.webp"
+                alt="Ocean Shuck Logo"
+                width="80"
+                height="80">
+
+            <div>
+                <h1>Ocean Shuck</h1>
+                <p>Seafood Restaurant</p>
+            </div>
+
+        </div>
+
+        <button
+            id="menu"
+            aria-label="Open Navigation Menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav>
+
+            <ul class="navigation">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html" class="active">Contact</a></li>
+
+                <li><a href="reservations.html">Reservations</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- PAGE TITLE -->
+
+        <section class="featured">
+
+            <h2>Contact Us</h2>
+
+            <p style="text-align:center;">
+                We'd love to hear from you. Reach out to us for inquiries,
+                reservations, catering requests, or feedback.
+            </p>
+
+        </section>
+
+        <!-- CONTACT INFORMATION -->
+
+        <section class="benefits">
+
+            <h2>Get In Touch</h2>
+
+            <div class="benefit-grid">
+
+                <article>
+                    <h3>Address</h3>
+                    <p>
+                        Lacson Street,
+                        Bacolod City, Philippines
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Phone</h3>
+                    <p>
+                        (034) 123-4567
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Email</h3>
+                    <p>
+                        oceanshuck@gmail.com
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Hours</h3>
+                    <p>
+                        Mon–Thu: 11:00 AM – 10:00 PM
+                    </p>
+
+                    <p>
+                        Fri–Sat: 11:00 AM – 11:00 PM
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT FORM -->
+
+        <section class="featured">
+
+            <h2>Send Us A Message</h2>
+
+            <form action="thankyou.html" method="get">
+
+                <label for="fullname">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required>
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+                <input
+                    type="submit"
+                    value="Send Message">
+
+            </form>
+
+        </section>
+
+        <!-- MAP -->
+
+        <section class="cta">
+
+            <div>
+
+                <h2>Visit Us</h2>
+
+                <p>
+                    Located in the heart of Bacolod City,
+                    Ocean Shuck is the perfect place for
+                    seafood lovers and family gatherings.
+                </p>
+
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps?q=Bacolod%20City&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                title="Ocean Shuck Location">
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <section>
+
+                <h3>Ocean Shuck</h3>
+
+                <p>
+                    Serving fresh seafood with passion.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="reservations.html">Reservations</a></li>
+
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h3>Hours</h3>
+
+                <p>Mon–Thu: 11:00 AM – 10:00 PM</p>
+                <p>Fri–Sat: 11:00 AM – 11:00 PM</p>
+                <p>Sunday: 10:00 AM – 9:00 PM</p>
+
+            </section>
+
+            <section>
+
+                <h3>Contact</h3>
+
+                <p>Lacson Street, Bacolod City</p>
+                <p>(034) 123-4567</p>
+                <p>oceanshuck@gmail.com</p>
+
+            </section>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Ocean Shuck. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

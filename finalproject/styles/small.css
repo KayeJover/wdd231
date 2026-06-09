@@ -1,0 +1,185 @@
+/* ==========================
+   MOBILE VIEW
+   small.css
+========================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: block;
+}
+
+/* ==========================
+   MOBILE NAVIGATION
+========================== */
+
+.navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background: var(--primary);
+
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+}
+
+.navigation a.active {
+    color: var(--secondary);
+}
+
+.navigation a:hover {
+    background: rgba(255,255,255,.1);
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero-content .btn {
+    margin-top: 1rem;
+}
+
+/* ==========================
+   FEATURED DISHES
+========================== */
+
+#featured-container {
+    grid-template-columns: 1fr;
+}
+
+.dish-card {
+    width: 100%;
+}
+
+.dish-card img {
+    height: 220px;
+}
+
+/* ==========================
+   BENEFITS
+========================== */
+
+.benefit-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.benefit-grid article {
+    padding: 1rem;
+}
+
+.benefit-grid img {
+    width: 60px;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.cta h2 {
+    text-align: center;
+}
+
+.cta .btn {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.footer-grid section {
+    margin-bottom: 1rem;
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+form {
+    padding: 1rem;
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+dialog {
+    width: 90%;
+    padding: 1.5rem;
+}
+
+/* ==========================
+   FEATURED SECTION TITLE
+========================== */
+
+.featured h2::before,
+.featured h2::after {
+    content: "~~";
+    margin: 0 .5rem;
+    color: var(--secondary);
+}
+
+/* ==========================
+   MOBILE SPACING
+========================== */
+
+main {
+    padding-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
