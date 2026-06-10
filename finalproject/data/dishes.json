@@ -4,104 +4,119 @@
     "name": "Garlic Butter Shrimp",
     "price": 399,
     "image": "images/garlic-butter-shrimp.webp",
-    "description": "Fresh shrimp sautéed in rich garlic butter sauce."
+    "description": "Fresh shrimp sautéed in rich garlic butter sauce.",
+    "details": "Our Garlic Butter Shrimp features premium shrimp cooked in a savory garlic butter sauce and served with seasoned rice and fresh vegetables. This customer favorite combines rich flavors with perfectly cooked seafood."
   },
   {
     "id": 2,
     "name": "Seafood Boil Feast",
     "price": 899,
     "image": "images/seafood-boil.webp",
-    "description": "A generous seafood feast with shrimp, crab, mussels, and corn."
+    "description": "A generous seafood feast with shrimp, crab, mussels, and corn.",
+    "details": "A generous seafood feast loaded with shrimp, crab, mussels, corn, and potatoes. Tossed in our signature seafood seasoning and perfect for sharing with family and friends."
   },
   {
     "id": 3,
     "name": "Grilled Oysters",
     "price": 299,
     "image": "images/grilled-oysters.webp",
-    "description": "Fresh oysters grilled with garlic, cheese, and herbs."
+    "description": "Fresh oysters grilled with garlic, cheese, and herbs.",
+    "details": "Fresh oysters grilled to perfection and topped with garlic, cheese, and herbs. Served hot and bursting with flavor straight from the ocean."
   },
   {
     "id": 4,
     "name": "Crispy Calamari",
     "price": 279,
     "image": "images/calamari.webp",
-    "description": "Golden fried calamari served with a tangy dipping sauce."
+    "description": "Golden fried calamari served with a tangy dipping sauce.",
+    "details": "Tender squid rings lightly battered and fried until golden brown. Served with our house-made tangy dipping sauce."
   },
   {
     "id": 5,
     "name": "Lobster Thermidor",
     "price": 1299,
     "image": "images/lobster-thermidor.webp",
-    "description": "Classic lobster dish baked with creamy cheese sauce."
+    "description": "Classic lobster dish baked with creamy cheese sauce.",
+    "details": "A luxurious seafood dish featuring lobster meat in a creamy sauce, topped with cheese, and baked until golden and bubbly."
   },
   {
     "id": 6,
     "name": "Baked Scallops",
     "price": 349,
     "image": "images/baked-scallops.webp",
-    "description": "Scallops baked with butter, garlic, and parmesan cheese."
+    "description": "Scallops baked with butter, garlic, and parmesan cheese.",
+    "details": "Fresh scallops baked with garlic butter and parmesan cheese. A rich and flavorful appetizer that seafood lovers enjoy."
   },
   {
     "id": 7,
     "name": "Seafood Paella",
     "price": 699,
     "image": "images/seafood-paella.webp",
-    "description": "Spanish-style rice loaded with fresh seafood."
+    "description": "Spanish-style rice loaded with fresh seafood.",
+    "details": "Traditional Spanish-style rice dish loaded with shrimp, mussels, squid, and fresh herbs cooked together for a delicious seafood experience."
   },
   {
     "id": 8,
     "name": "Grilled Tuna Steak",
     "price": 499,
     "image": "images/tuna-steak.webp",
-    "description": "Tender tuna steak grilled and seasoned to perfection."
+    "description": "Tender tuna steak grilled and seasoned to perfection.",
+    "details": "Premium tuna steak grilled to perfection and seasoned with herbs and spices. Served with fresh vegetables and lemon wedges."
   },
   {
     "id": 9,
     "name": "Butter Garlic Crab",
     "price": 799,
     "image": "images/garlic-crab.webp",
-    "description": "Fresh crab cooked in a flavorful garlic butter sauce."
+    "description": "Fresh crab cooked in a flavorful garlic butter sauce.",
+    "details": "Fresh crab cooked in our signature garlic butter sauce, delivering rich flavor in every bite."
   },
   {
     "id": 10,
     "name": "Fish and Chips",
     "price": 329,
     "image": "images/fish-chips.webp",
-    "description": "Crispy battered fish served with golden fries."
+    "description": "Crispy battered fish served with golden fries.",
+    "details": "Crispy battered fish fillets paired with golden fries and tartar sauce. A classic seafood favorite."
   },
   {
     "id": 11,
     "name": "Seafood Sinigang",
     "price": 449,
     "image": "images/seafood-sinigang.webp",
-    "description": "A Filipino sour soup filled with fresh seafood."
+    "description": "A Filipino sour soup filled with fresh seafood.",
+    "details": "A Filipino-style sour soup made with fresh seafood and vegetables in a flavorful tamarind broth."
   },
   {
     "id": 12,
     "name": "Shrimp Alfredo Pasta",
     "price": 399,
     "image": "images/shrimp-alfredo.webp",
-    "description": "Creamy Alfredo pasta topped with succulent shrimp."
+    "description": "Creamy Alfredo pasta topped with succulent shrimp.",
+    "details": "Creamy Alfredo pasta topped with juicy shrimp and parmesan cheese, creating a satisfying seafood pasta dish."
   },
   {
     "id": 13,
     "name": "Mussels in White Wine Sauce",
     "price": 379,
     "image": "images/mussels.webp",
-    "description": "Fresh mussels simmered in a rich white wine sauce."
+    "description": "Fresh mussels simmered in a rich white wine sauce.",
+    "details": "Fresh mussels simmered in a rich white wine and garlic sauce, served with toasted bread."
   },
   {
     "id": 14,
     "name": "Seafood Pizza",
     "price": 549,
     "image": "images/seafood-pizza.webp",
-    "description": "Thin crust pizza topped with shrimp, squid, and mussels."
+    "description": "Thin crust pizza topped with shrimp, squid, and mussels.",
+    "details": "Thin crust pizza loaded with shrimp, squid, mussels, and mozzarella cheese, baked to perfection."
   },
   {
     "id": 15,
     "name": "Ocean Shuck Platter",
     "price": 1499,
     "image": "images/ocean-shuck-platter.webp",
-    "description": "Our signature seafood platter featuring the best of the ocean."
+    "description": "Our signature seafood platter featuring the best of the ocean.",
+    "details": "Our signature seafood platter featuring shrimp, crab, oysters, mussels, scallops, and seasonal seafood selections. Perfect for sharing."
   }
 ]

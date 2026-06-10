@@ -126,7 +126,7 @@ function initializeModal(dishes) {
                     `₱${selectedDish.price}`;
 
                 modalDescription.textContent =
-                    selectedDish.description;
+                    selectedDish.details;
 
                 dialog.showModal();
             });
