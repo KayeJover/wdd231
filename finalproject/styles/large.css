@@ -22,6 +22,8 @@
 
     header {
         padding: 1rem 2rem;
+        position: relative;
+        max-width: 100%;
     }
 
     .logo-area h1 {
@@ -92,12 +94,12 @@
 
     .dish-card {
         transition: transform .3s ease,
-                    box-shadow .3s ease;
+            box-shadow .3s ease;
     }
 
     .dish-card:hover {
         transform: translateY(-6px);
-        box-shadow: 0 10px 20px rgba(0,0,0,.15);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     }
 
     /* ==========================

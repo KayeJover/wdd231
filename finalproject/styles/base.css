@@ -87,6 +87,7 @@ header {
     color: var(--white);
     padding: 1rem;
     position: relative;
+
 }
 
 .logo-area {
@@ -167,6 +168,7 @@ header {
     border-radius: 8px;
     font-weight: bold;
     transition: .3s ease;
+    text-align: center;
 }
 
 .btn:hover {
@@ -355,7 +357,9 @@ input[type="submit"]:hover {
     margin: 2rem auto;
     text-align: center;
 }
-
+.page-header p {
+    text-align: center;
+}
 .summary-card {
     background: white;
     padding: 2rem;
@@ -385,7 +389,9 @@ input[type="submit"]:hover {
 #modalDescription {
     line-height: 1.7;
 }
-
+#modalTitle {
+    font-size:30px;
+}
 #closeModal {
     float: right;
     border: none;
