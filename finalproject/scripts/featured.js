@@ -1,7 +1,7 @@
 // ==========================
 // FEATURED DISHES
 // ==========================
-
+import { openDishModal } from "./modal.js";
 const featuredContainer = document.querySelector("#featured-container");
 
 async function loadFeaturedDishes() {
@@ -113,22 +113,14 @@ function initializeModal(dishes) {
                         dish => dish.id === dishId
                     );
 
-                modalTitle.textContent =
-                    selectedDish.name;
-
-                modalImage.src =
-                    selectedDish.image;
-
-                modalImage.alt =
-                    selectedDish.name;
-
-                modalPrice.textContent =
-                    `₱${selectedDish.price}`;
-
-                modalDescription.textContent =
-                    selectedDish.details;
-
-                dialog.showModal();
+                openDishModal(
+                    dialog,
+                    modalTitle,
+                    modalImage,
+                    modalPrice,
+                    modalDescription,
+                    selectedDish
+                );
             });
         });
 

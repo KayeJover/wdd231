@@ -298,7 +298,15 @@ footer {
     border-top: 1px solid rgba(255,255,255,.2);
     padding-top: 1rem;
 }
+.footer-video-link {
+    color: #d4a017;
+    text-decoration: none;
+    font-weight: 600;
+}
 
+.footer-video-link:hover {
+    text-decoration: underline;
+}
 /* ==========================
    MODAL
 ========================== */
