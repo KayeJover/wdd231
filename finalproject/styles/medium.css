@@ -3,7 +3,7 @@
    medium.css
 ========================== */
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 900px) {
 
     /* ==========================
        HEADER
@@ -13,6 +13,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
     }
 
     #menu {
